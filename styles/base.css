@@ -3,7 +3,7 @@
     --card: #0b1220;
     --muted: #9aa7bf;
     --accent: #5eead4;
-    --accent-2: #60a5fa;
+    --accent-2: #0369a1;
     --text: #e6eef8;
     --text-bg: #071223;
     --max-width: 960px;
@@ -14,8 +14,8 @@
     box-sizing: border-box
 }
 
-html,
-body {
+html {
+    color: var(--text-bg);
     height: 100%
 }
 
@@ -33,6 +33,7 @@ body {
 header {
     text-align: center;
     margin-bottom: 2rem;
+    color: #071223;
 }
 
 header>span {
