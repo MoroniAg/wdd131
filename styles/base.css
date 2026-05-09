@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --bg: #0f1724;
+    --card: #0b1220;
+    --muted: #9aa7bf;
+    --accent: #5eead4;
+    --accent-2: #60a5fa;
+    --text: #e6eef8;
+    --text-bg: #071223;
+    --max-width: 960px;
+    --radius: 10px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* background: linear-gradient(180deg, var(--bg), #071223 80%); */
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+    /* padding: 0rem 1rem; */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header>span {
+    padding: 1rem;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+#course-title {
+    display: block;
+    /* centers easily */
+    font-family: Merriweather, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.01em;
+    /* margin-bottom: .5rem; */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    background-color: var(--card);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap
+}
+
+nav a {
+    display: inline-block;
+    padding: .5rem .8rem;
+    color: var(--muted);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all .18s ease;
+    font-weight: 600;
+    background: transparent;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--bg);
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(48, 199, 177, .12);
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    /* padding: 1rem; */
+}
+
+main>h1 {
+    font-family: Merriweather, serif;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    color: var(--text-bg);
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+@media(min-width:740px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+.card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 20px rgba(2, 6, 23, .6);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-family: Merriweather, serif;
+    color: var(--accent-2);
+    font-size: 1.125rem;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0.75rem 0;
+    border-radius: 6px;
+    object-fit: cover;
+    background: #06101a;
+}
+
+.card p {
+    color: var(--text-bg);
+    margin: 0 0 .5rem 0
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: .95rem
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+main>.card {
+    margin-bottom: 1rem
+}
+
+a:focus {
+    outline: 3px solid rgba(96, 165, 250, .18);
+    outline-offset: 3px
+}
+
+@media(max-width:420px) {
+    body {
+        padding: 1rem
+    }
+
+    #course-title {
+        font-size: 1rem
+    }
+
+    main>h1 {
+        font-size: 1.6rem
+    }
+
+    nav ul {
+        gap: .5rem
+    }
+}
+
+footer {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    padding: 0.5rem;
+    color: var(--text-bg);
+}
