@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>WDD 131 - Dynamic Web Fundamentals - Moroni Aguilera</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Moroni Aguilera | dynamic web, JavaScript, DOM, server-side integration">
+    <meta name="author" content="Moroni Aguilera">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='styles/temples.css'>
+    <link rel='stylesheet' href='styles/temples-large.css'>
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="page-inner">
+            <h1>Temple Album</h1>
+            <button id="nav-toggle" class="hamburger" aria-expanded="false" aria-controls="siteNav"
+                aria-label="Toggle navigation">☰</button>
+            <nav id="nav-site">
+                <ul class="site-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro page-inner">
+            <h1>Home</h1>
+        </section>
+
+        <section id="temples-list" class="page-inner">
+            <div class="temples-grid">
+                <figure class="temple-card">
+                    <img src="images/temple_1.webp" alt="Temple 1">
+                    <figcaption>Templo Columbia River, Washington</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/temple_2.webp" alt="Temple 2">
+                    <figcaption>Templo de Aba, Nigeria</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/temple_3.webp" alt="Temple 3">
+                    <figcaption>Templo de Abidján, Costa de Marfi</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/temple_4.webp" alt="Temple 4">
+                    <figcaption>Templo de Accra, Ghana</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/temple_5.webp" alt="Temple 5">
+                    <figcaption>Templo de Adelaida, Australia</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/temple_6.webp" alt="Temple 6">
+                    <figcaption>Templo de Alabang, Filipinas</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/temple_7.webp" alt="Temple 7">
+                    <figcaption>Templo de Albuquerque, Nuevo México</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/temple_8.webp" alt="Temple 8">
+                    <figcaption>Templo de Anchorage, Alaska</figcaption>
+                </figure>
+                <figure class="temple-card">
+                    <img src="images/temple_9.webp" alt="Temple 9">
+                    <figcaption>Templo de Budapest, Hungría</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Moroni Aguilera — Ambato, Ecuador
+        </p>
+
+        <p>Last Modified: <span id="lastModified"></span></p>
+
+    </footer>
+</body>
+
+</html>

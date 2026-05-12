@@ -1,0 +1,51 @@
+@media (min-width:900px) {
+    .page-inner {
+        padding: 24px
+    }
+
+    header .page-inner {
+        gap: 24px
+    }
+
+    header h1 {
+        font-size: 1.5rem
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px
+    }
+
+    figure img {
+        height: 200px
+    }
+
+    nav {
+        display: flex;
+        position: relative;
+    }
+
+    nav .site-nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1200px) {
+    .temples-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px
+    }
+
+    figure img {
+        height: 220px
+    }
+
+    nav {
+        display: flex;
+        position: relative;
+    }
+
+    nav .site-nav {
+        flex-direction: row;
+    }
+}

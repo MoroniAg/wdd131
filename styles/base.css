@@ -46,7 +46,7 @@ header>span {
     font-family: Merriweather, serif;
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--text);
+    color: var(--text-bg);
     letter-spacing: 0.01em;
     /* margin-bottom: .5rem; */
 }
@@ -56,6 +56,7 @@ nav {
     justify-content: center;
     padding: 0.5rem 0.5rem;
     background-color: var(--card);
+    color: var(--muted);
 }
 
 nav ul {
