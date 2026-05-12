@@ -17,20 +17,22 @@
 }
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     color: var(--color-text);
     /* background: var(--bg); */
     line-height: 1.45;
 }
 
-header {
+header,
+header * {
     background: var(--bg);
     border-bottom: 1px solid var(--border);
+    color: var(--color-white);
 }
 
 header .page-inner {
@@ -61,7 +63,7 @@ nav .site-nav {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
 }
 
 nav a {
@@ -85,6 +87,9 @@ nav a:hover {
     padding: 6px;
     cursor: pointer;
     color: var(--color-white);
+    background: rgba(0, 0, 0, 0.12);
+    color: var(--color-white);
+    border-radius: 6px;
 }
 
 main {
@@ -100,8 +105,9 @@ main h1 {
 .temples-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 1fr);
-    gap: var(--gap)
+    gap: var(--gap);
 }
+
 
 figure.temple-card {
     margin: 0;
@@ -130,6 +136,7 @@ figcaption {
     color: var(--color-white);
     text-align: center;
     padding: 6px 4px;
+    color: var(--color-text);
 }
 
 footer {
@@ -145,17 +152,17 @@ footer p {
 }
 
 .temples-grid .temple-card:nth-child(odd) {
-    transform: translateY(0)
+    transform: translateY(0);
 }
 
 img[src$=".jpg"],
 img[src$=".png"] {
-    background: #ddd
+    background: #ddd;
 }
 
 @media (max-width:900px) {
     .hamburger {
-        display: inline-block
+        display: inline-block;
     }
 
     nav {
@@ -175,14 +182,14 @@ img[src$=".png"] {
     nav .site-nav {
         flex-direction: column;
         gap: 12px;
-        margin-top: 8px
+        margin-top: 8px;
     }
 
     nav .site-nav li {
         display: flex;
         align-items: center;
         flex-direction: column;
-       
+
     }
 
     nav>ul>li:hover {
@@ -190,10 +197,10 @@ img[src$=".png"] {
     }
 
     .page-inner {
-        padding: 12px
+        padding: 12px;
     }
 
-    .temple-card img{
+    .temple-card img {
         height: fit-content;
     }
 }
