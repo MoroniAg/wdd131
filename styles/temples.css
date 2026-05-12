@@ -1,11 +1,8 @@
-/* Mobile-first styles for Temple Album */
 :root {
     --max-width: 1100px;
     --gap: 16px;
     --accent: #1f6feb;
-    /* primary blue */
     --accent-2: #0aa3a3;
-    /* teal */
     --bg: #388659;
     --card: #52AA5E;
     --card-optional: #52AA8A;
@@ -81,14 +78,12 @@ nav a:hover {
 
 .hamburger {
     display: none;
-    background: transparent;
     border: 0;
     font-size: 1.4rem;
     padding: 6px;
     cursor: pointer;
     color: var(--color-white);
     background: rgba(0, 0, 0, 0.12);
-    color: var(--color-white);
     border-radius: 6px;
 }
 
@@ -136,7 +131,6 @@ figcaption {
     color: var(--color-white);
     text-align: center;
     padding: 6px 4px;
-    color: var(--color-text);
 }
 
 footer {
