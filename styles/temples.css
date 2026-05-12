@@ -91,7 +91,7 @@ main {
     padding-block: 20px;
 }
 
-.intro h1 {
+main h1 {
     text-align: center;
     margin: .25rem 0;
     /* color: var(--accent); */
