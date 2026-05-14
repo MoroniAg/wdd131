@@ -3,7 +3,7 @@
     --gap: 16px;
     --accent: #1f6feb;
     --accent-2: #0aa3a3;
-    --bg: #388659;
+    --bg: #234b36;
     --card: #52AA5E;
     --card-optional: #52AA8A;
     --muted: #52AA8A;
@@ -28,7 +28,7 @@ body {
 header,
 header * {
     background: var(--bg);
-    border-bottom: 1px solid var(--border);
+    /* border-bottom: 1px solid var(--border); */
     color: var(--color-white);
 }
 
@@ -106,7 +106,7 @@ main h1 {
 
 figure.temple-card {
     margin: 0;
-    background: var(--card-optional);
+    background: var(--card);
     /* border: 1px solid var(--border); */
     border-radius: 10px;
     overflow: hidden;
@@ -128,7 +128,7 @@ figure img {
 figcaption {
     margin-top: 10px;
     font-weight: 600;
-    color: var(--color-white);
+    color: var(--color-text);
     text-align: center;
     padding: 6px 4px;
 }
