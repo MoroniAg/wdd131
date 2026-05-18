@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="128" height="128" aria-hidden="false" role="img">
+  <title>Weather icon: sun behind cloud</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFD24D"/>
+      <stop offset="100%" stop-color="#FF9A4D"/>
+    </linearGradient>
+  </defs>
+  <!-- sun -->
+  <g transform="translate(12,8)">
+    <circle cx="12" cy="12" r="8" fill="url(#g)" />
+    <g stroke="#FFB84D" stroke-width="2" stroke-linecap="round" opacity="0.9">
+      <line x1="12" y1="-6" x2="12" y2="-12" />
+      <line x1="12" y1="30" x2="12" y2="36" />
+      <line x1="-6" y1="12" x2="-12" y2="12" />
+      <line x1="30" y1="12" x2="36" y2="12" />
+      <line x1="2" y1="2" x2="-2" y2="-2" />
+      <line x1="22" y1="22" x2="26" y2="26" />
+      <line x1="22" y1="2" x2="26" y2="-2" />
+      <line x1="2" y1="22" x2="-2" y2="26" />
+    </g>
+  </g>
+  <!-- cloud -->
+  <g transform="translate(16,26)">
+    <path d="M44 26c0-7-6-12-13-12-2 0-4 .5-6 1.6C22 10 13 12 9 18 4 19 0 24 0 30c0 6 5 11 11 11h33c6 0 10-5 10-11 0-6-5-11-10-11z" fill="#E6F0FA"/>
+    <path d="M44 26c0-7-6-12-13-12-2 0-4 .5-6 1.6C22 10 13 12 9 18 4 19 0 24 0 30c0 6 5 11 11 11h33c6 0 10-5 10-11 0-6-5-11-10-11z" fill="#CFE6FF" opacity="0.6"/>
+  </g>
+  <!-- optional raindrop (small) -->
+  <path d="M46 44c0 3-2 6-5 6s-5-3-5-6 5-9 5-9 5 6 5 9z" fill="#79C7FF" opacity="0.9" transform="translate(0,0)"/>
+</svg>

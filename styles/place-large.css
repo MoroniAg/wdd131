@@ -1,0 +1,52 @@
+@media (min-width: 900px) {
+    main {
+        position: relative;
+        /* height: 100vh ; */
+        padding: 0;
+        width: 100%;
+    }
+
+    picture.country {
+        position: relative;
+        inset: 0;
+        /* top:0; right:0; bottom:0; left:0 */
+        width: 100%;
+        max-height: max-content;
+        z-index: 0;
+        display: block;
+    }
+
+    picture.country img {
+        width: 100%;
+        /* max-height: max-content; */
+        object-fit: cover;
+        display: block;
+    }
+
+    .country-card {
+        position: absolute;
+        width: 320px;
+        max-width: calc(40% - 2rem);
+        z-index: 2;
+        background: var(--color-light);
+        border: solid 1px var(--color-secondary);
+
+    }
+
+    .country-card:nth-of-type(1) {
+        top: 2rem;
+        left: 2rem;
+        transform: translateZ(0);
+    }
+
+    .country-card:nth-of-type(2) {
+        bottom: 2rem;
+        right: 2rem;
+        transform: translateZ(0);
+    }
+
+    .country-card>div {
+        padding: 0.25rem 0;
+    }
+
+}

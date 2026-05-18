@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>WDD 131 - Country Page - Moroni Aguilera</title>
+    <meta name="description"
+        content="WDD 131 - Country Page - Moroni Aguilera | dynamic web, JavaScript, DOM, server-side integration">
+    <meta name="author" content="Moroni Aguilera">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='styles/place.css'>
+    <link rel='stylesheet' href='styles/place-large.css'>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Paris, France</h1>
+    </header>
+
+    <main>
+
+        <picture class="country">
+            <source srcset="images/paris_large.webp" media="(min-width: 900px)">
+            <source srcset="images/paris_medium.webp" media="(min-width: 600px)">
+            <img src="images/paris_small.webp" alt="country">
+        </picture>
+        <section class="country-card">
+            <h2>Data</h2>
+            <div>
+                <p><strong>Country:</strong> <span class="value">France</span></p>
+                <p><strong>City:</strong> <span class="value">Paris</span></p>
+                <p><strong>Population:</strong> <span class="value">~2.1 million (2020 est.)</span></p>
+                <p><strong>Area:</strong> <span class="value">105 km² (city proper)</span></p>
+                <p><strong>Language:</strong> <span class="value">French</span></p>
+                <p><strong>Currency:</strong> <span class="value">Euro (EUR)</span></p>
+                <p><strong>Time zone:</strong> <span class="value">CET (UTC+1), CEST (UTC+2 in summer)</span></p>
+                <p><strong>Calling code:</strong> <span class="value">+33</span></p>
+            </div>
+        </section>
+        <section class="country-card">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="weather icon" width="50">
+            <div>
+                <p><strong>Temperature:</strong> <span class="value">18°C</span></p>
+                <p><strong>Conditions:</strong> <span class="value">Partly cloudy</span></p>
+                <p><strong>Wind:</strong> <span class="value">NW 10 km/h</span></p>
+                <p><strong>Wind chill:</strong> <span class="value">16°C</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>
+                &copy; <span id="currentyear"></span>
+                Moroni Aguilera — Paris, France
+            </p>
+
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
