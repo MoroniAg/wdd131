@@ -65,6 +65,7 @@ picture.country img {
     align-items: center;
     text-align: center;
     transition: transform 180ms ease, box-shadow 180ms ease;
+    position: relative;
 }
 
 .country-card>div {
@@ -97,9 +98,7 @@ picture.country img {
     box-shadow: 0 12px 30px rgba(37, 40, 44, 0.08);
 }
 
-.country-card {
-    position: relative;
-}
+
 
 .country-card::after {
     content: "";
