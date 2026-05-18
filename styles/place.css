@@ -88,12 +88,30 @@ picture.country img {
 .country-card>div p .value {
     justify-self: start;
     display: block;
+    color: var(--color-secondary);
 }
 
 
 .country-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(37, 40, 44, 0.08);
+}
+
+.country-card {
+    position: relative;
+}
+
+.country-card::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 6px;
+    right: 16px;
+    top: 12px;
+    background: var(--color-primary);
+    border-radius: 4px;
+    opacity: 0.95;
+    pointer-events: none;
 }
 
 .country-card h2 {
@@ -103,9 +121,7 @@ picture.country img {
     color: var(--color-secondary);
 }
 
-.country-card>div p .value {
-    color: #404444;
-}
+
 
 @media (max-width: 520px) {
     .country-card {
