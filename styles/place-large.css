@@ -25,15 +25,15 @@
 
     .country-card {
         position: absolute;
-        width: 320px;
-        max-width: calc(40% - 2rem);
+        width: 620px;
+        max-width: calc(30% - 2rem);
         z-index: 2;
         background: var(--color-light);
         border: solid 1px var(--color-secondary);
-
+        font-size: 0.75rem;
     }
 
-    .country-card > div:first-child {
+    .country-card>div:first-child {
         position: relative;
         right: 3rem;
         padding: 1rem;
@@ -41,15 +41,29 @@
         color: var(--color-light);
     }
 
-    .country-card > div:first-child > img{
+    .country-card.weather>div:first-child::after {
+        background-image: url("../images/weather.svg");
+    }
+
+    .country-card>div:first-child::after {
+        content: "";
         position: absolute;
         width: 30px;
         height: 30px;
         top: 0.5rem;
         right: 1rem;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        pointer-events: none;
     }
 
-    .country-card  h2{
+    .country-card>div:first-child>img {
+        display: none;
+    }
+
+    .country-card h2 {
         color: var(--color-light);
         margin: 0px;
     }
