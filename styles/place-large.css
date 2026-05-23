@@ -35,7 +35,7 @@
 
     .country-card>div:first-child {
         position: relative;
-        right: 3rem;
+        /* right: 3rem; */
         padding: 1rem;
         background: var(--color-secondary);
         color: var(--color-light);
