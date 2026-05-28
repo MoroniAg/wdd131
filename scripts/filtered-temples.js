@@ -129,7 +129,7 @@ function renderTemples(list) {
   const grid = document.querySelector('.temples-grid');
   if (!grid || !Array.isArray(list)) return;
   grid.innerHTML = '';
-  list.forEach(t => {
+  list.forEach((t, index) => {
     const card = document.createElement('article');
     card.className = 'temple-card';
 
@@ -152,10 +152,15 @@ function renderTemples(list) {
     const img = document.createElement('img');
     img.src = t.imageUrl || '';
     img.alt = t.templeName || 'Temple image';
-    img.loading = 'lazy';
     img.width = '300';
     img.height = '225';
-    img.fetchPriority = 'high';
+    // For the first image in the rendered list treat it as LCP: don't lazy-load and give high priority
+    if (index === 0) {
+      img.loading = 'eager';
+      img.fetchPriority = 'high';
+    } else {
+      img.loading = 'lazy';
+    }
     card.appendChild(img);
 
 
