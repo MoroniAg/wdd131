@@ -154,13 +154,8 @@ function renderTemples(list) {
     img.alt = t.templeName || 'Temple image';
     img.width = '300';
     img.height = '225';
-    // For the first image in the rendered list treat it as LCP: don't lazy-load and give high priority
-    if (index === 0) {
-      img.loading = 'eager';
-      img.fetchPriority = 'high';
-    } else {
-      img.loading = 'lazy';
-    }
+    img.fetchPriority = 'high';
+    img.loading = 'lazy';
     card.appendChild(img);
 
 
