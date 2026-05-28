@@ -91,7 +91,7 @@ main {
     padding-block: 20px;
 }
 
-main h1 {
+main h2 {
     text-align: center;
     margin: .25rem 0;
     /* color: var(--accent); */
@@ -118,7 +118,7 @@ main h1 {
     text-align: center;
 }
 
-.temple-card img{
+.temple-card img {
     margin: auto;
 }
 
@@ -142,7 +142,7 @@ footer {
     border-top: 1px solid var(--border);
     background: var(--bg);
     padding: 16px;
-    min-height: 1000px;
+    min-height: 64px;
     box-sizing: border-box;
 }
 
@@ -150,6 +150,12 @@ footer p {
     margin: 6px 0;
     color: var(--color-white);
     text-align: center;
+}
+
+#currentyear,
+#lastModified {
+    display: inline-block;
+    min-width: 140px;
 }
 
 .temples-grid .temple-card:nth-child(odd) {
