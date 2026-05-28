@@ -154,7 +154,7 @@ function renderTemples(list) {
     img.alt = t.templeName || 'Temple image';
     img.width = '300';
     img.height = '225';
-    img.fetchPriority = 'high';
+    // img.fetchPriority = 'high';
     img.loading = 'lazy';
     card.appendChild(img);
 
