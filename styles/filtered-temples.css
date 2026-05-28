@@ -103,6 +103,10 @@ main h2 {
     gap: var(--gap);
 }
 
+.temples-grid {
+    min-height: calc(100vh - 240px);
+}
+
 
 .temple-card {
     margin: 0;
