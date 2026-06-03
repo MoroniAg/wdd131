@@ -1,0 +1,182 @@
+:root {
+    --bg-1: #0f1724;
+    --bg-2: #112240;
+    --accent-solid: #7b61ff;
+    --text: #ffffff;
+    --subtext: #b6c8df;
+    --radius: 16px;
+    --gap: 16px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    /* padding: 48px 20px; */
+}
+
+header {
+    padding: 0.5rem;
+    background: var(--accent-solid);
+    color: var(--text);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+main form {
+    margin: 0 auto;
+    /* background: var(--bg-2); */
+    color: black;
+    width: 100%;
+    max-width: 820px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius);
+    padding: 28px;
+    backdrop-filter: blur(8px) saturate(120%);
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+
+}
+
+main form div {
+    padding: 1rem 0 0 0;
+}
+
+
+label {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--bg-1);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--bg-1);
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)); */
+    color: var(--bg-1);
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 1px;
+    height: 1px;
+    /* opacity: 0; */
+    position: absolute
+}
+
+label>input[type="radio"] + .control{
+    border-radius: 1rem;
+}
+
+label>input[type="checkbox"] + .control{
+    border-radius: 0rem;
+}
+
+label .control {
+    width: 18px;
+    height: 18px;
+    
+    border: 1px solid var(--bg-1);
+    display: inline-block;
+    flex: 0 0 18px;
+    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.25)
+}
+
+input[type="radio"]:checked+.control {
+    background: var(--accent-solid);
+    border-color: var(--accent-solid);
+    box-shadow: 0 2px 6px rgba(123, 97, 255, 0.25)
+}
+
+input[type="checkbox"]:checked+.control {
+    background: var(--accent-solid);
+    border-color: black;
+}
+
+.label-text {
+    color: var(--bg-1);
+    /* font-weight: 600; */
+    margin-left: 6px
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    outline: 3px solid var(--accent-solid);
+    outline-offset: 4px
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+input[type="submit"] {
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 0;
+    color: var(--text);
+    background: var(--accent-solid);
+    /* background-image: var(--accent); */
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 8px 24px rgba(43, 30, 105, 0.25)
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    transition: transform .18s ease
+}
+
+
+
+footer {
+    margin-top: 18px;
+    color: var(--text);
+    background: var(--accent-solid);
+    font-size: 0.9rem;
+    text-align: center
+}
+
+@media(max-width:720px) {
+
+
+    body {
+        padding: 28px
+    }
+
+    form#reviewForm {
+        padding: 20px
+    }
+}
