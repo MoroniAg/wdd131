@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>QuickNutri — Healthy and Quick Recipes</title>
+    <meta name="description"
+        content="QuickNutri: a hub for quick, healthy meal ideas with categorized recipes, ingredient search, and a built-in cooking timer.">
+    <meta name="author" content="Moroni Aguilera">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style/recipes.css">
+    <link rel="stylesheet" href="style/recipes-large.css">
+    <script src="scripts/site.js" defer></script>
+    <script src="scripts/recipes.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container site-header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-logo" aria-hidden="true">Q</span>
+                <span class="brand-name">QuickNutri</span>
+            </a>
+
+            <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="nav-site" aria-expanded="false"
+                aria-label="Open navigation menu">☰</button>
+
+            <nav id="nav-site" class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a aria-label="nav-quick" href="#">Quick</a></li>
+                    <li><a aria-label="nav-gourmet" href="#">Gourmet</a></li>
+                    <li><a href="#about-contact">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <p class="hero-eyebrow">Healthy · Quick · Tasty</p>
+            <h1 id="hero-title">Real meals in under 30 minutes.</h1>
+            <p class="hero-lead">
+                QuickNutri curates fast, wholesome recipes you can make with
+                everyday ingredients. Filter by category, search by what you
+                already have, and cook with a built-in timer.
+            </p>
+            <div class="hero-cta">
+                <a class="btn" href="#recipes">Browse recipes</a>
+                <a class="btn btn--ghost" href="#about">How it works</a>
+            </div>
+        </section>
+
+        <section class="search" aria-labelledby="search-title">
+            <h2 id="search-title">Find a recipe</h2>
+            <label class="search-field">
+                <span class="visually-hidden">Search recipes</span>
+                <input id="recipe-search" type="search" placeholder="Search by name or ingredient…" autocomplete="off">
+            </label>
+
+            <div id="categories" class="chips" role="group" aria-label="Filter by category">
+                <button class="chip is-active" type="button" data-category="all">All</button>
+                <button class="chip" type="button" data-category="breakfast">Breakfast</button>
+                <button class="chip" type="button" data-category="lunch">Lunch</button>
+                <button class="chip" type="button" data-category="dinner">Dinner</button>
+                <button class="chip" type="button" data-category="snack">Snacks</button>
+            </div>
+        </section>
+
+        <section id="recipes" class="recipes" aria-labelledby="recipes-title">
+            <div class="recipes-head">
+                <h2 id="recipes-title">Featured recipes</h2>
+                <p id="recipes-status" class="recipes-status" role="status" aria-live="polite">Loading recipes…</p>
+            </div>
+            <div id="recipes-grid" class="recipes-grid" aria-busy="true">
+
+            </div>
+        </section>
+
+        <section id="about-contact" class="about-contact">
+            <div class="about">
+                <h2 id="about-title-2">About QuickNutri</h2>
+                <p>
+                    QuickNutri is focused on quick, healthy recipes suitable for busy
+                    people who want simple, nutritious meals without long prep times.
+                </p>
+            </div>
+
+            <form id="contact-form" class="contact-form" aria-labelledby="contact-title" method="get"
+                action="contact.html">
+                <h2 id="contact-title">Contact / Feedback</h2>
+
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" required placeholder="you@example.com">
+
+                <label for="contact-subject">Subject</label>
+                <input id="contact-subject" name="subject" type="text" required placeholder="Subject">
+
+                <label for="contact-message">Description</label>
+                <textarea id="contact-message" name="message" rows="5" required
+                    placeholder="Tell us about your idea or feedback"></textarea>
+
+                <div class="contact-actions">
+                    <button type="submit" class="btn">Send</button>
+                    <button type="reset" class="btn btn--ghost">Reset</button>
+                </div>
+                <p id="contact-status" aria-live="polite" class="contact-status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer-inner">
+            <p>&copy; <span id="currentyear"></span> Moroni Aguilera — QuickNutri</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

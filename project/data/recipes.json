@@ -1,0 +1,68 @@
+{
+  "recipes": [
+    {
+      "id": "overnight-oats-berries",
+      "title": "Overnight Oats with Berries",
+      "category": "breakfast",
+      "time": 5,
+      "summary": "Creamy rolled oats soaked overnight with chia seeds, almond milk, and fresh mixed berries.",
+      "ingredients": ["rolled oats", "almond milk", "chia seeds", "honey", "blueberries", "strawberries"]
+    },
+    {
+      "id": "avocado-toast-egg",
+      "title": "Avocado Toast with Egg",
+      "category": "breakfast",
+      "time": 10,
+      "summary": "Whole-grain toast topped with smashed avocado, a runny fried egg, chili flakes, and lemon.",
+      "ingredients": ["whole-grain bread", "avocado", "egg", "lemon", "chili flakes", "olive oil"]
+    },
+    {
+      "id": "mediterranean-bowl",
+      "title": "Mediterranean Chickpea Bowl",
+      "category": "lunch",
+      "time": 15,
+      "summary": "Chickpeas, cucumber, tomato, olives, and feta over rice with lemon-tahini drizzle.",
+      "ingredients": ["chickpeas", "cucumber", "cherry tomatoes", "kalamata olives", "feta", "tahini", "lemon"]
+    },
+    {
+      "id": "chicken-veggie-stir-fry",
+      "title": "Chicken & Veggie Stir-Fry",
+      "category": "dinner",
+      "time": 20,
+      "summary": "Tender chicken strips and crisp vegetables tossed in a savory garlic-ginger soy sauce.",
+      "ingredients": ["chicken breast", "bell pepper", "broccoli", "garlic", "ginger", "soy sauce", "sesame oil"]
+    },
+    {
+      "id": "tofu-curry-rice",
+      "title": "Tofu Curry over Rice",
+      "category": "dinner",
+      "time": 25,
+      "summary": "Golden pan-fried tofu in a quick coconut curry, served over jasmine rice.",
+      "ingredients": ["tofu", "coconut milk", "curry powder", "onion", "garlic", "jasmine rice", "spinach"]
+    },
+    {
+      "id": "greek-yogurt-parfait",
+      "title": "Greek Yogurt Parfait",
+      "category": "snack",
+      "time": 5,
+      "summary": "Layered Greek yogurt with granola, banana slices, and a drizzle of honey.",
+      "ingredients": ["greek yogurt", "granola", "banana", "honey", "cinnamon"]
+    },
+    {
+      "id": "energy-bites",
+      "title": "No-Bake Energy Bites",
+      "category": "snack",
+      "time": 15,
+      "summary": "Oats, peanut butter, and dark chocolate chips rolled into bite-sized snacks.",
+      "ingredients": ["oats", "peanut butter", "honey", "flaxseed", "dark chocolate chips", "vanilla"]
+    },
+    {
+      "id": "quinoa-salad",
+      "title": "Lemon Quinoa Salad",
+      "category": "lunch",
+      "time": 20,
+      "summary": "Fluffy quinoa with parsley, mint, cucumber, and a bright lemon-olive-oil dressing.",
+      "ingredients": ["quinoa", "parsley", "mint", "cucumber", "lemon", "olive oil", "salt"]
+    }
+  ]
+}
